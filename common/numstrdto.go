@@ -42,7 +42,7 @@ var NumStrCurrencySymbols = []rune{
 	'\U00066115', // Venezuela Bolivar								26
 	'\U00008363', // Viet Nam Dong										27
 	'\U00000024', // United States Dollar  						28
-	'\U000000a3', // United Kingdom Pound  						29
+	'\U000000a3', // United Kingdom Pound (£)					29
 	'\U000020a3', // French Franc  						        30
 	'\U000020a4', // Italy Lira  						          31
 	'\U000020bf', // Bitcoin  						            32
