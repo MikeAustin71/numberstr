@@ -7,6 +7,11 @@ import (
 	"math/big"
 )
 
+/*
+	The source code repository for numstrdto.go is located at:
+			https://github.com/MikeAustin71/numstrdto.git
+ */
+
 // Source Currency Info
 // https://gist.github.com/bzerangue/5484121
 // http://symbologic.info/currency.htm
