@@ -10,7 +10,7 @@ func TestNumStrDto_AddNumStrs_01(t *testing.T) {
 	nStr2 := "9211.40"
 	nStr3 := "-377.81"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -74,7 +74,7 @@ func TestNumStrDto_AddNumStrs_02(t *testing.T) {
 	nStr2 := "-9211.40"
 	nStr3 := "377.81"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -138,7 +138,7 @@ func TestNumStrDto_AddNumStrs_03(t *testing.T) {
 	nStr2 := "9211.40"
 	nStr3 := "18800.61"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -202,7 +202,7 @@ func TestNumStrDto_AddNumStrs_04(t *testing.T) {
 	nStr2 := "-9211.40"
 	nStr3 := "-18800.61"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -266,7 +266,7 @@ func TestNumStrDto_AddNumStrs_05(t *testing.T) {
 	nStr2 := "3"
 	nStr3 := "5"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -330,7 +330,7 @@ func TestNumStrDto_AddNumStrs_06(t *testing.T) {
 	nStr2 := "0.0"
 	nStr3 := "2.0"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -394,7 +394,7 @@ func TestNumStrDto_AddNumStrs_07(t *testing.T) {
 	nStr2 := "0.0"
 	nStr3 := "0.0"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -458,7 +458,7 @@ func TestNumStrDto_AddNumStrs_08(t *testing.T) {
 	nStr2 := "67.521"
 	nStr3 := "61.521"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -522,7 +522,7 @@ func TestNumStrDto_AddNumStrs_09(t *testing.T) {
 	nStr2 := "-6"
 	nStr3 := "61.521"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -585,7 +585,7 @@ func TestNumStrDto_AddNumStrs_10(t *testing.T) {
 	nStr2 := "67.521"
 	nStr3 := "0.000"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -647,7 +647,7 @@ func TestNumStrDto_AddNumStrs_11(t *testing.T) {
 	nStr2 := "-67.521"
 	nStr3 := "0.000"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -708,7 +708,7 @@ func TestNumStrDto_CompareAbsoluteVals_01(t *testing.T) {
 	nStr1 := "-12567.218956"
 	nStr2 := "-9211.40"
 	expectedCompare := 1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -724,7 +724,7 @@ func TestNumStrDto_CompareAbsoluteVals_02(t *testing.T) {
 	nStr1 := "-12567.218956"
 	nStr2 := "9211.40"
 	expectedCompare := 1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -740,7 +740,7 @@ func TestNumStrDto_CompareAbsoluteVals_03(t *testing.T) {
 	nStr1 := "-12567.218956"
 	nStr2 := "12567.218956"
 	expectedCompare := 0
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -756,7 +756,7 @@ func TestNumStrDto_CompareAbsoluteVals_04(t *testing.T) {
 	nStr1 := "567.21"
 	nStr2 := "12567.218956"
 	expectedCompare := -1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -772,7 +772,7 @@ func TestNumStrDto_CompareAbsoluteVals_05(t *testing.T) {
 	nStr1 := "567.21"
 	nStr2 := "-12567.218956"
 	expectedCompare := -1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -788,7 +788,7 @@ func TestNumStrDto_CompareAbsoluteVals_06(t *testing.T) {
 	nStr1 := "567.21"
 	nStr2 := "-567.21"
 	expectedCompare := 0
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -804,7 +804,7 @@ func TestNumStrDto_CompareAbsoluteVals_07(t *testing.T) {
 	nStr1 := "567.21"
 	nStr2 := "567.21"
 	expectedCompare := 0
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -820,7 +820,7 @@ func TestNumStrDto_CompareAbsoluteVals_08(t *testing.T) {
 	nStr1 := "567.21"
 	nStr2 := "1567.21"
 	expectedCompare := -1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -836,7 +836,7 @@ func TestNumStrDto_CompareSignedVals_01(t *testing.T) {
 	nStr1 := "-12567.218956"
 	nStr2 := "-9211.40"
 	expectedCompare := -1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -852,7 +852,7 @@ func TestNumStrDto_CompareSignedVals_02(t *testing.T) {
 	nStr1 := "12567.218956"
 	nStr2 := "9211.40"
 	expectedCompare := 1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -868,7 +868,7 @@ func TestNumStrDto_CompareSignedVals_03(t *testing.T) {
 	nStr1 := "-12567.218956"
 	nStr2 := "9211.40"
 	expectedCompare := -1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -884,7 +884,7 @@ func TestNumStrDto_CompareSignedVals_04(t *testing.T) {
 	nStr1 := "12567.218956"
 	nStr2 := "-9211.40"
 	expectedCompare := 1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -900,7 +900,7 @@ func TestNumStrDto_CompareSignedVals_05(t *testing.T) {
 	nStr1 := "12567.218956"
 	nStr2 := "-12567.218956"
 	expectedCompare := 1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -916,7 +916,7 @@ func TestNumStrDto_CompareSignedVals_06(t *testing.T) {
 	nStr1 := "-12567.218956"
 	nStr2 := "12567.218956"
 	expectedCompare := -1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -932,7 +932,7 @@ func TestNumStrDto_CompareSignedVals_07(t *testing.T) {
 	nStr1 := "-12567.218956"
 	nStr2 := "-12567.218956"
 	expectedCompare := 0
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -948,7 +948,7 @@ func TestNumStrDto_CompareSignedVals_08(t *testing.T) {
 	nStr1 := "12567.218956"
 	nStr2 := "12567.218956"
 	expectedCompare := 0
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
 
@@ -967,7 +967,7 @@ func TestNumStrDto_FormatForMathOps_01(t *testing.T) {
 	nStr4 := "-09211.400000"
 	expectedCompare := 1
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1021,7 +1021,7 @@ func TestNumStrDto_FormatForMathOps_02(t *testing.T) {
 	nStr4 := "-09211.400000"
 	expectedCompare := 1
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1075,7 +1075,7 @@ func TestNumStrDto_FormatForMathOps_03(t *testing.T) {
 	nStr4 := "-06.000"
 	expectedCompare := 1
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1129,7 +1129,7 @@ func TestNumStrDto_FormatForMathOps_04(t *testing.T) {
 	nStr4 := "-06.000"
 	expectedCompare := 1
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1182,7 +1182,7 @@ func TestNumStrDto_FormatForMathOps_05(t *testing.T) {
 	nStr3 := "-67.521"
 	nStr4 := "06.000"
 	expectedCompare := 1
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1235,7 +1235,7 @@ func TestNumStrDto_FormatForMathOps_06(t *testing.T) {
 	nStr3 := "-67.521"
 	nStr4 := "67.521"
 	expectedCompare := 0
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1290,13 +1290,13 @@ func TestNumStrDto_CopyIn_01(t *testing.T) {
 	signVal := 1
 	precision := uint(3)
 
-	n1, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	n1, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from n1 NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from n1 NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	nDto.CopyIn(n1)
 
@@ -1350,13 +1350,13 @@ func TestNumStrDto_CopyIn_02(t *testing.T) {
 	signVal := -1
 	precision := uint(3)
 
-	n1, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	n1, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from n1 NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from n1 NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	nDto.CopyIn(n1)
 
@@ -1410,10 +1410,10 @@ func TestNumStrDto_CopyOut_01(t *testing.T) {
 	signVal := 1
 	precision := uint(3)
 
-	n1, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	n1, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from n1 NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from n1 NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	nDto := n1.CopyOut()
@@ -1468,10 +1468,10 @@ func TestNumStrDto_CopyOut_02(t *testing.T) {
 	signVal := -1
 	precision := uint(3)
 
-	n1, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	n1, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from n1 NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from n1 NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	nDto := n1.CopyOut()
@@ -1528,10 +1528,10 @@ func TestNumStrDto_GetAbsoluteBigInt_01(t *testing.T) {
 		t.Errorf("big.SetString(absNumStr,10) Failed!. absNumStr= '%v'", absNumStr)
 	}
 
-	n1, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	n1, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from n1 NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from n1 NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	absBigInt, err := n1.GetAbsoluteBigInt()
@@ -1552,10 +1552,10 @@ func TestNumStrDto_GetSignedBigInt_01(t *testing.T) {
 		t.Errorf("big.SetString(signedNumStr,10) Failed!. signedNumStr= '%v'", signedNumStr)
 	}
 
-	n1, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	n1, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from n1 NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from n1 NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	signedBigInt, err := n1.GetSignedBigInt()
@@ -1570,7 +1570,7 @@ func TestNumStrDto_MultiplyNumStrs_01(t *testing.T) {
 	nStr1 := "35.123456"
 	nStr2 := "47.9876514"
 	nStr3 := "1685.4921624912384"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1633,7 +1633,7 @@ func TestNumStrDto_MultiplyNumStrs_02(t *testing.T) {
 	nStr1 := "35.123456"
 	nStr2 := "-47.9876514"
 	nStr3 := "-1685.4921624912384"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1696,7 +1696,7 @@ func TestNumStrDto_MultiplyNumStrs_03(t *testing.T) {
 	nStr1 := "-35.123456"
 	nStr2 := "-47.9876514"
 	nStr3 := "1685.4921624912384"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1759,7 +1759,7 @@ func TestNumStrDto_MultiplyNumStrs_04(t *testing.T) {
 	nStr1 := "57"
 	nStr2 := "123"
 	nStr3 := "7011"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1822,7 +1822,7 @@ func TestNumStrDto_MultiplyNumStrs_05(t *testing.T) {
 	nStr1 := "57"
 	nStr2 := "-123"
 	nStr3 := "-7011"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1885,7 +1885,7 @@ func TestNumStrDto_MultiplyNumStrs_06(t *testing.T) {
 	nStr1 := "-57"
 	nStr2 := "123"
 	nStr3 := "-7011"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -1948,7 +1948,7 @@ func TestNumStrDto_MultiplyNumStrs_07(t *testing.T) {
 	nStr1 := "-57"
 	nStr2 := "-123"
 	nStr3 := "7011"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -2011,7 +2011,7 @@ func TestNumStrDto_MultiplyNumStrs_08(t *testing.T) {
 	nStr1 := "0"
 	nStr2 := "123"
 	nStr3 := "0"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -2074,7 +2074,7 @@ func TestNumStrDto_MultiplyNumStrs_09(t *testing.T) {
 	nStr1 := "57"
 	nStr2 := "0"
 	nStr3 := "0"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -2137,7 +2137,7 @@ func TestNumStrDto_MultiplyNumStrs_10(t *testing.T) {
 	nStr1 := "-57"
 	nStr2 := "0"
 	nStr3 := "0"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -2200,7 +2200,7 @@ func TestNumStrDto_MultiplyNumStrs_11(t *testing.T) {
 	nStr1 := "57"
 	nStr2 := "0.123"
 	nStr3 := "7.011"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -2263,7 +2263,7 @@ func TestNumStrDto_MultiplyNumStrs_12(t *testing.T) {
 	nStr1 := "62.1234567890123"
 	nStr2 := "3.12345678901234"
 	nStr3 := "194.039932864555212496281111782"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -2326,7 +2326,7 @@ func TestNumStrDto_MultiplyNumStrs_13(t *testing.T) {
 	nStr1 := "-62.1234567890123"
 	nStr2 := "3.12345678901234"
 	nStr3 := "-194.039932864555212496281111782"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -2389,7 +2389,7 @@ func TestNumStrDto_MultiplyNumStrs_14(t *testing.T) {
 	nStr1 := "-62.1234567890123"
 	nStr2 := "-3.12345678901234"
 	nStr3 := "194.039932864555212496281111782"
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -2455,10 +2455,10 @@ func TestNumStrDto_ParseNumStr_01(t *testing.T) {
 	signVal := 1
 	precision := uint(3)
 
-	nDto, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	nDto, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	s := nDto.NumStrOut
@@ -2510,10 +2510,10 @@ func TestNumStrDto_ParseNumStr_02(t *testing.T) {
 	signVal := 1
 	precision := uint(0)
 
-	nDto, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	nDto, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	s := nDto.NumStrOut
@@ -2565,10 +2565,10 @@ func TestNumStrDto_ParseNumStr_03(t *testing.T) {
 	signVal := -1
 	precision := uint(0)
 
-	nDto, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	nDto, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	s := nDto.NumStrOut
@@ -2620,10 +2620,10 @@ func TestNumStrDto_ParseNumStr_04(t *testing.T) {
 	signVal := -1
 	precision := uint(3)
 
-	nDto, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	nDto, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	s := nDto.NumStrOut
@@ -2676,10 +2676,10 @@ func TestNumStrDto_ParseNumStr_05(t *testing.T) {
 	signVal := 1
 	precision := uint(3)
 
-	nDto, err := NumStrDto{}.NewPtr().ParseNumStr(nStr)
+	nDto, err := NumberStr{}.NewPtr().ParseNumStr(nStr)
 
 	if err != nil {
-		t.Errorf("Received error from NumStrDto.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
+		t.Errorf("Received error from NumberStr.ParseNumStr(nStr). nStr= '%v' Error= %v", nStr, err)
 	}
 
 	s := nDto.NumStrOut
@@ -2739,10 +2739,10 @@ func TestNumStrDto_ParseSignedBigInt_01(t *testing.T) {
 		t.Errorf("BigInt.SetString(signedAbsNumStr,10) conversion failed! nStr= '%v' ", signedAbsNumStr)
 	}
 
-	n1, err := NumStrDto{}.NewPtr().ParseSignedBigInt(sBigInt, precision)
+	n1, err := NumberStr{}.NewPtr().ParseSignedBigInt(sBigInt, precision)
 
 	if err != nil {
-		t.Errorf("Received error from n1 NumStrDto.ParseSignedBigInt(sBigInt, precision). sBigInt= '%v' Error= %v", sBigInt.String(), err)
+		t.Errorf("Received error from n1 NumberStr.ParseSignedBigInt(sBigInt, precision). sBigInt= '%v' Error= %v", sBigInt.String(), err)
 	}
 
 	nDto := n1.CopyOut()
@@ -2811,10 +2811,10 @@ func TestNumStrDto_ParseSignedBigInt_02(t *testing.T) {
 		t.Errorf("BigInt.SetString(signedAbsNumStr,10) conversion failed! nStr= '%v' ", signedAbsNumStr)
 	}
 
-	n1, err := NumStrDto{}.NewPtr().ParseSignedBigInt(sBigInt, precision)
+	n1, err := NumberStr{}.NewPtr().ParseSignedBigInt(sBigInt, precision)
 
 	if err != nil {
-		t.Errorf("Received error from n1 NumStrDto.ParseSignedBigInt(sBigInt, precision). sBigInt= '%v' Error= %v", sBigInt.String(), err)
+		t.Errorf("Received error from n1 NumberStr.ParseSignedBigInt(sBigInt, precision). sBigInt= '%v' Error= %v", sBigInt.String(), err)
 	}
 
 	nDto := n1.CopyOut()
@@ -2876,7 +2876,7 @@ func TestNumStrDto_ScaleNumStr_01(t *testing.T) {
 	fracStr := "000"
 	signVal := 1
 
-	nsDto, err := NumStrDto{}.NewPtr().SetPrecision(nStr, scale, false)
+	nsDto, err := NumberStr{}.NewPtr().SetPrecision(nStr, scale, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -2924,7 +2924,7 @@ func TestNumStrDto_ScaleNumStr_02(t *testing.T) {
 	fracStr := "000"
 	signVal := -1
 
-	nsDto, err := NumStrDto{}.NewPtr().SetPrecision(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().SetPrecision(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -2972,7 +2972,7 @@ func TestNumStrDto_ScaleNumStr_03(t *testing.T) {
 	fracStr := "000000000"
 	signVal := 1
 
-	nsDto, err := NumStrDto{}.NewPtr().SetPrecision(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().SetPrecision(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3020,7 +3020,7 @@ func TestNumStrDto_ScaleNumStr_04(t *testing.T) {
 	absIntRuneStr := "123456"
 	absFracRuneStr := "79"
 
-	nsDto, err := NumStrDto{}.NewPtr().SetPrecision(nStr, precision, true)
+	nsDto, err := NumberStr{}.NewPtr().SetPrecision(nStr, precision, true)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3068,7 +3068,7 @@ func TestNumStrDto_ScaleNumStr_05(t *testing.T) {
 	absIntRuneStr := "123456"
 	absFracRuneStr := "78900"
 
-	nsDto, err := NumStrDto{}.NewPtr().SetPrecision(nStr, precision, true)
+	nsDto, err := NumberStr{}.NewPtr().SetPrecision(nStr, precision, true)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3116,7 +3116,7 @@ func TestNumStrDto_ScaleNumStr_06(t *testing.T) {
 	absIntRuneStr := "123456"
 	absFracRuneStr := "78900"
 
-	nsDto, err := NumStrDto{}.NewPtr().SetPrecision(nStr, precision, true)
+	nsDto, err := NumberStr{}.NewPtr().SetPrecision(nStr, precision, true)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3163,7 +3163,7 @@ func TestNumStrDto_ScaleNumStr_07(t *testing.T) {
 	absIntRuneStr := "123456"
 	absFracRuneStr := "789"
 
-	nsDto, err := NumStrDto{}.NewPtr().SetPrecision(nStr, precision, true)
+	nsDto, err := NumberStr{}.NewPtr().SetPrecision(nStr, precision, true)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3211,7 +3211,7 @@ func TestNumStrUtility_ScaleAbsoluteValStr_01(t *testing.T) {
 	absIntRuneStr := "123"
 	absFracRuneStr := "456"
 
-	nsDto, err := NumStrDto{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3259,7 +3259,7 @@ func TestNumStrUtility_ScaleAbsoluteValStr_02(t *testing.T) {
 	absIntRuneStr := "12"
 	absFracRuneStr := "3456"
 
-	nsDto, err := NumStrDto{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3307,7 +3307,7 @@ func TestNumStrUtility_ScaleAbsoluteValStr_03(t *testing.T) {
 	absIntRuneStr := "123"
 	absFracRuneStr := "456"
 
-	nsDto, err := NumStrDto{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3355,7 +3355,7 @@ func TestNumStrUtility_ScaleAbsoluteValStr_04(t *testing.T) {
 	absIntRuneStr := "12"
 	absFracRuneStr := "3456"
 
-	nsDto, err := NumStrDto{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3403,7 +3403,7 @@ func TestNumStrUtility_ScaleAbsoluteValStr_05(t *testing.T) {
 	absIntRuneStr := "0"
 	absFracRuneStr := "0123456"
 
-	nsDto, err := NumStrDto{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3451,7 +3451,7 @@ func TestNumStrUtility_ScaleAbsoluteValStr_06(t *testing.T) {
 	absIntRuneStr := "123"
 	absFracRuneStr := "456"
 
-	nsDto, err := NumStrDto{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, 3). nStr= '%v'. Error= %v", nStr, err)
@@ -3499,7 +3499,7 @@ func TestNumStrUtility_ScaleAbsoluteValStr_07(t *testing.T) {
 	absIntRuneStr := "12"
 	absFracRuneStr := "3456"
 
-	nsDto, err := NumStrDto{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
+	nsDto, err := NumberStr{}.NewPtr().ScaleAbsoluteValStr(nStr, precision, false)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.SetPrecision(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3549,7 +3549,7 @@ func TestNumStrDto_ShiftPrecisionLeft_01(t *testing.T) {
 	absIntRuneStr := "123"
 	absFracRuneStr := "456789"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3599,7 +3599,7 @@ func TestNumStrDto_ShiftPrecisionLeft_02(t *testing.T) {
 	absIntRuneStr := "1234"
 	absFracRuneStr := "56789"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3649,7 +3649,7 @@ func TestNumStrDto_ShiftPrecisionLeft_03(t *testing.T) {
 	absIntRuneStr := "0"
 	absFracRuneStr := "123456789"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3699,7 +3699,7 @@ func TestNumStrDto_ShiftPrecisionLeft_04(t *testing.T) {
 	absIntRuneStr := "123"
 	absFracRuneStr := "456789"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3749,7 +3749,7 @@ func TestNumStrDto_ShiftPrecisionLeft_05(t *testing.T) {
 	absIntRuneStr := "0"
 	absFracRuneStr := "00123"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3799,7 +3799,7 @@ func TestNumStrDto_ShiftPrecisionLeft_06(t *testing.T) {
 	absIntRuneStr := "123456"
 	absFracRuneStr := "789"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3849,7 +3849,7 @@ func TestNumStrDto_ShiftPrecisionLeft_07(t *testing.T) {
 	absIntRuneStr := "123"
 	absFracRuneStr := "456789"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3899,7 +3899,7 @@ func TestNumStrDto_ShiftPrecisionLeft_08(t *testing.T) {
 	absIntRuneStr := "0"
 	absFracRuneStr := ""
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionLeft(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3949,7 +3949,7 @@ func TestNumStrDto_ShiftPrecisionRight_01(t *testing.T) {
 	absIntRuneStr := "123456789"
 	absFracRuneStr := ""
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionRight(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionRight(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -3999,7 +3999,7 @@ func TestNumStrDto_ShiftPrecisionRight_02(t *testing.T) {
 	absIntRuneStr := "12345678"
 	absFracRuneStr := "9"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionRight(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionRight(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -4049,7 +4049,7 @@ func TestNumStrDto_ShiftPrecisionRight_03(t *testing.T) {
 	absIntRuneStr := "123456789000"
 	absFracRuneStr := ""
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionRight(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionRight(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -4099,7 +4099,7 @@ func TestNumStrDto_ShiftPrecisionRight_04(t *testing.T) {
 	absIntRuneStr := "123456789000000"
 	absFracRuneStr := ""
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionRight(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionRight(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -4149,7 +4149,7 @@ func TestNumStrDto_ShiftPrecisionRight_05(t *testing.T) {
 	absIntRuneStr := "0"
 	absFracRuneStr := ""
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionRight(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionRight(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -4199,7 +4199,7 @@ func TestNumStrDto_ShiftPrecisionRight_06(t *testing.T) {
 	absIntRuneStr := "123456"
 	absFracRuneStr := "789"
 
-	nsDto, err := NumStrDto{}.NewPtr().ShiftPrecisionRight(nStr, precision)
+	nsDto, err := NumberStr{}.NewPtr().ShiftPrecisionRight(nStr, precision)
 
 	if err != nil {
 		t.Errorf("Received error from nsu.ShiftPrecisionLeft(nStr, precision). nStr= '%v' precision= '%v'. Error= %v", nStr, precision, err)
@@ -4244,7 +4244,7 @@ func TestNumStrDto_SubtractNumStrs_01(t *testing.T) {
 	nStr2 := "-6"
 	nStr3 := "73.521"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -4306,7 +4306,7 @@ func TestNumStrDto_SubtractNumStrs_02(t *testing.T) {
 	nStr2 := "6"
 	nStr3 := "-73.521"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -4368,7 +4368,7 @@ func TestNumStrDto_SubtractNumStrs_03(t *testing.T) {
 	nStr2 := "691.1"
 	nStr3 := "-623.579"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -4431,7 +4431,7 @@ func TestNumStrDto_SubtractNumStrs_04(t *testing.T) {
 	nStr2 := "67.521"
 	nStr3 := "623.579"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -4494,7 +4494,7 @@ func TestNumStrDto_SubtractNumStrs_05(t *testing.T) {
 	nStr2 := "0"
 	nStr3 := "691.1"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
@@ -4557,7 +4557,7 @@ func TestNumStrDto_SubtractNumStrs_06(t *testing.T) {
 	nStr2 := "691.1"
 	nStr3 := "-691.1"
 
-	nDto := NumStrDto{}.New()
+	nDto := NumberStr{}.New()
 
 	n1, _ := nDto.ParseNumStr(nStr1)
 	n2, _ := nDto.ParseNumStr(nStr2)
