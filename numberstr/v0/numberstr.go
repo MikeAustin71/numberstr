@@ -1,4 +1,4 @@
-package common
+package numberstr
 
 import (
 	"errors"
@@ -10,14 +10,14 @@ import (
 /*
 	The source code repository for numberstr.go is located at:
 			https://github.com/MikeAustin71/numstrdto.git
- */
+*/
 
 // Source Currency Info
 // https://gist.github.com/bzerangue/5484121
 // http://symbologic.info/currency.htm
 // http://www.xe.com/symbols.php
 
-var NumberStrCurrencySymbols = []rune{
+var CurrencySymbolsNumberStr = []rune{
 	'\U00000024', // Australia Dollar 								 0
 	'\U00008236', // Brazil Real											 1
 	'\U00000024', // Canada Dollar 										 2
@@ -116,17 +116,16 @@ func (numStr *NumberStr) AddNumStrs(n1Dto NumberStr, n2Dto NumberStr) (NumberStr
 
 		if err != nil {
 			return NumberStr{},
-				fmt.Errorf("AddNumStrs() - Error returned from n1DtoSetup.SetSignValue(1) " +
+				fmt.Errorf("AddNumStrs() - Error returned from n1DtoSetup.SetSignValue(1) "+
 					"Error='%v' ", err.Error())
 		}
 
 		err = n2DtoSetup.SetSignValue(1)
 		if err != nil {
 			return NumberStr{},
-				fmt.Errorf("AddNumStrs() - Error returned from n2DtoSetup.SetSignValue(1) " +
+				fmt.Errorf("AddNumStrs() - Error returned from n2DtoSetup.SetSignValue(1) "+
 					"Error='%v' ", err.Error())
 		}
-
 
 		nDtoOut, err := numStr.SubtractNumStrs(n1DtoSetup, n2DtoSetup)
 
@@ -142,8 +141,8 @@ func (numStr *NumberStr) AddNumStrs(n1Dto NumberStr, n2Dto NumberStr) (NumberStr
 
 		if err != nil {
 			return NumberStr{},
-			fmt.Errorf("AddNumStrs() - Error returned from nDtoOut.SetSignValue(newSignVal) " +
-				"Error='%v' ", err.Error())
+				fmt.Errorf("AddNumStrs() - Error returned from nDtoOut.SetSignValue(newSignVal) "+
+					"Error='%v' ", err.Error())
 		}
 
 		return nDtoOut, nil
@@ -415,7 +414,6 @@ func (numStr *NumberStr) Empty() {
 	if numStr.CurrencySymbol == 0 {
 		numStr.CurrencySymbol = '$'
 	}
-
 
 }
 
@@ -855,6 +853,10 @@ func (numStr *NumberStr) GetSignedBigInt() (*big.Int, error) {
 	return absBigInt, nil
 }
 
+func (numStr NumberStr) GetVersion() string {
+	return "Version 0"
+}
+
 // GetZeroNumStr - returns a new NumberStr initialized
 // to zero value. If the parameter numFracDigits is set
 // to a value greater than zero, then an equal number of
@@ -1013,7 +1015,7 @@ func (numStr *NumberStr) IsNumStrDtoValid(numDto *NumberStr, errName string) err
 		}
 
 		if i >= lenAbsIntRunes &&
-			(numDto.AbsFracRunes[i - lenAbsIntRunes] < '0' || numDto.AbsFracRunes[i - lenAbsIntRunes] > '9') {
+			(numDto.AbsFracRunes[i-lenAbsIntRunes] < '0' || numDto.AbsFracRunes[i-lenAbsIntRunes] > '9') {
 			hasNonNumericChars = true
 			break
 		}
@@ -1057,7 +1059,6 @@ func (numStr *NumberStr) MultiplyNumStrs(n1Dto NumberStr, n2Dto NumberStr) (Numb
 
 	}
 
-
 	newPrecision := n1Setup.Precision + n2Setup.Precision
 	newSignVal := 1
 
@@ -1067,7 +1068,6 @@ func (numStr *NumberStr) MultiplyNumStrs(n1Dto NumberStr, n2Dto NumberStr) (Numb
 		// Must be n1Setup.SignVal != n2Setup.SignVal
 		newSignVal = -1
 	}
-
 
 	lenN1AbsAllRunes = len(n1Setup.AbsAllNumRunes)
 	lenN2AbsAllRunes = len(n2Setup.AbsAllNumRunes)
@@ -1290,13 +1290,13 @@ func (numStr *NumberStr) ParseNumStr(str string) (NumberStr, error) {
 	lBaseRunes := len(baseRunes)
 	isStartRunes := false
 	isEndRunes := false
-	lCurRunes := len(NumberStrCurrencySymbols)
+	lCurRunes := len(CurrencySymbolsNumberStr)
 	isSkip := false
 
 	for i := 0; i < lBaseRunes && isEndRunes == false; i++ {
 
 		for j := 0; j < lCurRunes; j++ {
-			if baseRunes[i] == NumberStrCurrencySymbols[j] {
+			if baseRunes[i] == CurrencySymbolsNumberStr[j] {
 				isSkip = true
 				break
 			}
@@ -2058,15 +2058,15 @@ func (numStr *NumberStr) SubtractNumStrs(n1Dto, n2Dto NumberStr) (NumberStr, err
 
 		if err != nil {
 			return NumberStr{},
-			fmt.Errorf("SubtractNumStrs() - Error from numStr.AddNumStrs(n1NumDto, n2NumDto). " +
-				"Error= %v", err.Error())
+				fmt.Errorf("SubtractNumStrs() - Error from numStr.AddNumStrs(n1NumDto, n2NumDto). "+
+					"Error= %v", err.Error())
 		}
 
 		err = nOutDto.SetSignValue(newSignVal)
 
 		if err != nil {
 			return NumberStr{},
-				fmt.Errorf("SubtractNumStrs() - Error from numStr.AddNumStrs(n1NumDto, n2NumDto). " +
+				fmt.Errorf("SubtractNumStrs() - Error from numStr.AddNumStrs(n1NumDto, n2NumDto). "+
 					"Error= %v", err.Error())
 		}
 

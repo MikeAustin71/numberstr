@@ -1,4 +1,4 @@
-package common
+package numberstr
 
 import (
 	"math/big"
