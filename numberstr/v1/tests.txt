@@ -189,4 +189,4 @@
 === RUN   TestNumberStr_SubtractNumStrs_06
 --- PASS: TestNumberStr_SubtractNumStrs_06 (0.00s)
 PASS
-ok  	MikeAustin71/numberstr_go/numberstr/v1	3.194s
+ok  	MikeAustin71/numberstr_go/numberstr/v1	2.419s
