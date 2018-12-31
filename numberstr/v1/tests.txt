@@ -1,0 +1,192 @@
+=== RUN   TestNumberStr_AddNumStrs_01
+--- PASS: TestNumberStr_AddNumStrs_01 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_02
+--- PASS: TestNumberStr_AddNumStrs_02 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_03
+--- PASS: TestNumberStr_AddNumStrs_03 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_04
+--- PASS: TestNumberStr_AddNumStrs_04 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_05
+--- PASS: TestNumberStr_AddNumStrs_05 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_06
+--- PASS: TestNumberStr_AddNumStrs_06 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_07
+--- PASS: TestNumberStr_AddNumStrs_07 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_08
+--- PASS: TestNumberStr_AddNumStrs_08 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_09
+--- PASS: TestNumberStr_AddNumStrs_09 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_10
+--- PASS: TestNumberStr_AddNumStrs_10 (0.00s)
+=== RUN   TestNumberStr_AddNumStrs_11
+--- PASS: TestNumberStr_AddNumStrs_11 (0.00s)
+=== RUN   TestNumberStr_CompareAbsoluteVals_01
+--- PASS: TestNumberStr_CompareAbsoluteVals_01 (0.00s)
+=== RUN   TestNumberStr_CompareAbsoluteVals_02
+--- PASS: TestNumberStr_CompareAbsoluteVals_02 (0.00s)
+=== RUN   TestNumberStr_CompareAbsoluteVals_03
+--- PASS: TestNumberStr_CompareAbsoluteVals_03 (0.00s)
+=== RUN   TestNumberStr_CompareAbsoluteVals_04
+--- PASS: TestNumberStr_CompareAbsoluteVals_04 (0.00s)
+=== RUN   TestNumberStr_CompareAbsoluteVals_05
+--- PASS: TestNumberStr_CompareAbsoluteVals_05 (0.00s)
+=== RUN   TestNumberStr_CompareAbsoluteVals_06
+--- PASS: TestNumberStr_CompareAbsoluteVals_06 (0.00s)
+=== RUN   TestNumberStr_CompareAbsoluteVals_07
+--- PASS: TestNumberStr_CompareAbsoluteVals_07 (0.00s)
+=== RUN   TestNumberStr_CompareAbsoluteVals_08
+--- PASS: TestNumberStr_CompareAbsoluteVals_08 (0.00s)
+=== RUN   TestNumberStr_CompareSignedVals_01
+--- PASS: TestNumberStr_CompareSignedVals_01 (0.00s)
+=== RUN   TestNumberStr_CompareSignedVals_02
+--- PASS: TestNumberStr_CompareSignedVals_02 (0.00s)
+=== RUN   TestNumberStr_CompareSignedVals_03
+--- PASS: TestNumberStr_CompareSignedVals_03 (0.00s)
+=== RUN   TestNumberStr_CompareSignedVals_04
+--- PASS: TestNumberStr_CompareSignedVals_04 (0.00s)
+=== RUN   TestNumberStr_CompareSignedVals_05
+--- PASS: TestNumberStr_CompareSignedVals_05 (0.00s)
+=== RUN   TestNumberStr_CompareSignedVals_06
+--- PASS: TestNumberStr_CompareSignedVals_06 (0.00s)
+=== RUN   TestNumberStr_CompareSignedVals_07
+--- PASS: TestNumberStr_CompareSignedVals_07 (0.00s)
+=== RUN   TestNumberStr_CompareSignedVals_08
+--- PASS: TestNumberStr_CompareSignedVals_08 (0.00s)
+=== RUN   TestNumberStr_FormatForMathOps_01
+--- PASS: TestNumberStr_FormatForMathOps_01 (0.00s)
+=== RUN   TestNumberStr_FormatForMathOps_02
+--- PASS: TestNumberStr_FormatForMathOps_02 (0.00s)
+=== RUN   TestNumberStr_FormatForMathOps_03
+--- PASS: TestNumberStr_FormatForMathOps_03 (0.00s)
+=== RUN   TestNumberStr_FormatForMathOps_04
+--- PASS: TestNumberStr_FormatForMathOps_04 (0.00s)
+=== RUN   TestNumberStr_FormatForMathOps_05
+--- PASS: TestNumberStr_FormatForMathOps_05 (0.00s)
+=== RUN   TestNumberStr_FormatForMathOps_06
+--- PASS: TestNumberStr_FormatForMathOps_06 (0.00s)
+=== RUN   TestNumberStr_CopyIn_01
+--- PASS: TestNumberStr_CopyIn_01 (0.00s)
+=== RUN   TestNumberStr_CopyIn_02
+--- PASS: TestNumberStr_CopyIn_02 (0.00s)
+=== RUN   TestNumberStr_CopyOut_01
+--- PASS: TestNumberStr_CopyOut_01 (0.00s)
+=== RUN   TestNumberStr_CopyOut_02
+--- PASS: TestNumberStr_CopyOut_02 (0.00s)
+=== RUN   TestNumberStr_GetAbsoluteBigInt_01
+--- PASS: TestNumberStr_GetAbsoluteBigInt_01 (0.00s)
+=== RUN   TestNumberStr_GetSignedBigInt_01
+--- PASS: TestNumberStr_GetSignedBigInt_01 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_01
+--- PASS: TestNumberStr_MultiplyNumStrs_01 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_02
+--- PASS: TestNumberStr_MultiplyNumStrs_02 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_03
+--- PASS: TestNumberStr_MultiplyNumStrs_03 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_04
+--- PASS: TestNumberStr_MultiplyNumStrs_04 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_05
+--- PASS: TestNumberStr_MultiplyNumStrs_05 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_06
+--- PASS: TestNumberStr_MultiplyNumStrs_06 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_07
+--- PASS: TestNumberStr_MultiplyNumStrs_07 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_08
+--- PASS: TestNumberStr_MultiplyNumStrs_08 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_09
+--- PASS: TestNumberStr_MultiplyNumStrs_09 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_10
+--- PASS: TestNumberStr_MultiplyNumStrs_10 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_11
+--- PASS: TestNumberStr_MultiplyNumStrs_11 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_12
+--- PASS: TestNumberStr_MultiplyNumStrs_12 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_13
+--- PASS: TestNumberStr_MultiplyNumStrs_13 (0.00s)
+=== RUN   TestNumberStr_MultiplyNumStrs_14
+--- PASS: TestNumberStr_MultiplyNumStrs_14 (0.00s)
+=== RUN   TestNumberStr_NewNumberStr_01
+--- PASS: TestNumberStr_NewNumberStr_01 (0.00s)
+=== RUN   TestNumberStr_ParseNumStr_01
+--- PASS: TestNumberStr_ParseNumStr_01 (0.00s)
+=== RUN   TestNumberStr_ParseNumStr_02
+--- PASS: TestNumberStr_ParseNumStr_02 (0.00s)
+=== RUN   TestNumberStr_ParseNumStr_03
+--- PASS: TestNumberStr_ParseNumStr_03 (0.00s)
+=== RUN   TestNumberStr_ParseNumStr_04
+--- PASS: TestNumberStr_ParseNumStr_04 (0.00s)
+=== RUN   TestNumberStr_ParseNumStr_05
+--- PASS: TestNumberStr_ParseNumStr_05 (0.00s)
+=== RUN   TestNumberStr_ParseSignedBigInt_01
+--- PASS: TestNumberStr_ParseSignedBigInt_01 (0.00s)
+=== RUN   TestNumberStr_ParseSignedBigInt_02
+--- PASS: TestNumberStr_ParseSignedBigInt_02 (0.00s)
+=== RUN   TestNumberStr_ScaleNumStr_01
+--- PASS: TestNumberStr_ScaleNumStr_01 (0.00s)
+=== RUN   TestNumberStr_ScaleNumStr_02
+--- PASS: TestNumberStr_ScaleNumStr_02 (0.00s)
+=== RUN   TestNumberStr_ScaleNumStr_03
+--- PASS: TestNumberStr_ScaleNumStr_03 (0.00s)
+=== RUN   TestNumberStr_ScaleNumStr_04
+--- PASS: TestNumberStr_ScaleNumStr_04 (0.00s)
+=== RUN   TestNumberStr_ScaleNumStr_05
+--- PASS: TestNumberStr_ScaleNumStr_05 (0.00s)
+=== RUN   TestNumberStr_ScaleNumStr_06
+--- PASS: TestNumberStr_ScaleNumStr_06 (0.00s)
+=== RUN   TestNumberStr_ScaleNumStr_07
+--- PASS: TestNumberStr_ScaleNumStr_07 (0.00s)
+=== RUN   TestNumStrUtility_ScaleAbsoluteValStr_01
+--- PASS: TestNumStrUtility_ScaleAbsoluteValStr_01 (0.00s)
+=== RUN   TestNumStrUtility_ScaleAbsoluteValStr_02
+--- PASS: TestNumStrUtility_ScaleAbsoluteValStr_02 (0.00s)
+=== RUN   TestNumStrUtility_ScaleAbsoluteValStr_03
+--- PASS: TestNumStrUtility_ScaleAbsoluteValStr_03 (0.00s)
+=== RUN   TestNumStrUtility_ScaleAbsoluteValStr_04
+--- PASS: TestNumStrUtility_ScaleAbsoluteValStr_04 (0.00s)
+=== RUN   TestNumStrUtility_ScaleAbsoluteValStr_05
+--- PASS: TestNumStrUtility_ScaleAbsoluteValStr_05 (0.00s)
+=== RUN   TestNumStrUtility_ScaleAbsoluteValStr_06
+--- PASS: TestNumStrUtility_ScaleAbsoluteValStr_06 (0.00s)
+=== RUN   TestNumStrUtility_ScaleAbsoluteValStr_07
+--- PASS: TestNumStrUtility_ScaleAbsoluteValStr_07 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionLeft_01
+--- PASS: TestNumberStr_ShiftPrecisionLeft_01 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionLeft_02
+--- PASS: TestNumberStr_ShiftPrecisionLeft_02 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionLeft_03
+--- PASS: TestNumberStr_ShiftPrecisionLeft_03 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionLeft_04
+--- PASS: TestNumberStr_ShiftPrecisionLeft_04 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionLeft_05
+--- PASS: TestNumberStr_ShiftPrecisionLeft_05 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionLeft_06
+--- PASS: TestNumberStr_ShiftPrecisionLeft_06 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionLeft_07
+--- PASS: TestNumberStr_ShiftPrecisionLeft_07 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionLeft_08
+--- PASS: TestNumberStr_ShiftPrecisionLeft_08 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionRight_01
+--- PASS: TestNumberStr_ShiftPrecisionRight_01 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionRight_02
+--- PASS: TestNumberStr_ShiftPrecisionRight_02 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionRight_03
+--- PASS: TestNumberStr_ShiftPrecisionRight_03 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionRight_04
+--- PASS: TestNumberStr_ShiftPrecisionRight_04 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionRight_05
+--- PASS: TestNumberStr_ShiftPrecisionRight_05 (0.00s)
+=== RUN   TestNumberStr_ShiftPrecisionRight_06
+--- PASS: TestNumberStr_ShiftPrecisionRight_06 (0.00s)
+=== RUN   TestNumberStr_SubtractNumStrs_01
+--- PASS: TestNumberStr_SubtractNumStrs_01 (0.00s)
+=== RUN   TestNumberStr_SubtractNumStrs_02
+--- PASS: TestNumberStr_SubtractNumStrs_02 (0.00s)
+=== RUN   TestNumberStr_SubtractNumStrs_03
+--- PASS: TestNumberStr_SubtractNumStrs_03 (0.00s)
+=== RUN   TestNumberStr_SubtractNumStrs_04
+--- PASS: TestNumberStr_SubtractNumStrs_04 (0.00s)
+=== RUN   TestNumberStr_SubtractNumStrs_05
+--- PASS: TestNumberStr_SubtractNumStrs_05 (0.00s)
+=== RUN   TestNumberStr_SubtractNumStrs_06
+--- PASS: TestNumberStr_SubtractNumStrs_06 (0.00s)
+PASS
+ok  	MikeAustin71/numberstr_go/numberstr/v1	3.194s
